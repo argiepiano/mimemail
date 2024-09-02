@@ -20,7 +20,7 @@
  */
 function mimemail_rfc_headers($headers) {
   $header = '';
-  $crlf = config_get('mimemail.settings', 'mimemail_crlf');
+  $crlf = config_get('mimemail.settings', 'mimemail_headers_crlf');
   foreach ($headers as $key => $value) {
     $key = trim($key);
     // Collapse spaces and get rid of newline characters.
