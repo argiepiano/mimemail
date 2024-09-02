@@ -76,8 +76,7 @@ function mimemail_update_1000() {
 function mimemail_update_1001() {
   // Since January 2024, sendmail is more strict in requiring the use of \r\n
   // as end-of-line to separate email headers. This adds a new configuration
-  // called mimemail_headers_crlf that can be changed through the UI if 
-  // necessary.
+  // called mimemail_headers_crlf that can be changed manually if necessary.
   $config = config('mimemail.settings');
   $config->set('mimemail_headers_crlf', "\r\n");
   $config->save();
